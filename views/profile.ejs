@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title><%= testUser.name %> - Social Media App</title>
+    </head>
+    <body>
+        <!-- TODO: Check if current user; if not, add follow button. -->
+        
+        <p>Profile for: <%= testUser.name %></p>
+        <p><%= testUser.biography %></p>
+        
+        <p>Followers: <%= testUser.followers.length %></p>
+        <p>Following: <%= testUser.following.length %></p>
+
+        <% for(post in testUser.posts) { %>
+            <p><%= post.description %></p>
+        <% } %>
+
+    </body>
+</html>
