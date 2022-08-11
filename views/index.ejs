@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home - Social Media App</title>
+    </head>
+    <body>
+        <p>Welcome to the home page! Posts are below:</p>
+
+        <p><%= testPost.author %></p>
+        <p><%= testPost.description %></p>
+
+        <% for(comment in testPost.comments) { %>
+            <p><%= comment.description %></p>
+            <p>Likes: <%= comment.likes %></p>
+        <% } %>
+
+    </body>
+</html>
