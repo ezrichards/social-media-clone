@@ -16,3 +16,9 @@ The branches are as follows:
 `04-frontend` - Setting up the frontend (Bootstrap, user profiles, displaying MongoDB data)
 
 `05-final` - Wrap Up (anything remaining: security, frontend tweaks, other small things)
+
+# Running the application
+
+Once you switch a branch, make sure to `npm install` all of the requirements.
+
+Make sure a `mongod` instance is running, then run `node index.js`. You're all set!
